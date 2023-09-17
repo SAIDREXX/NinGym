@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width">
     <title>NinGym</title>
     <link rel="stylesheet" href="css/index_style.css">
 </head>
@@ -41,5 +41,13 @@
     <footer>
         <p>&copy; 2023 SAIDREXXX</p>
     </footer>
+    <script>
+    let text = document.querySelectorAll('ul li a').forEach (text => {
+        text.innerHTML = text.innerText.split('').map((letters, i) => `<span style="transition-delay:${i*40}ms;">${letters}</span>`).join('');
+    })
+    </script>
 </body>
+
+
+
 </html>

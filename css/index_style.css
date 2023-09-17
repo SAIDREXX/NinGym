@@ -26,6 +26,7 @@ header {
     align-items: center;
     padding: 0 10px;
 }
+
 .navbar-list {
     list-style: none;
     margin: 0;
@@ -52,8 +53,21 @@ header {
 nav a {
     font-family: "Russo One", sans-serif;
     text-decoration: none;
-    color: #BF0615;
+    color: #555;
     
+}
+
+ul li a span {
+    transition: 0.25s;
+}
+
+ul li:hover a span {
+    color: #BF0615;
+    text-shadow: 0 0 5px #BF0615,
+    0 0 15px #BF0615,
+    0 0 30px #BF0615,
+    0 0 60px #BF0615,
+    0 0 100px #BF0615,
 }
 
 main {
