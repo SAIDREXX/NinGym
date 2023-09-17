@@ -9,13 +9,14 @@
 <body>
     <header>
         <div class="navbar-container">
+            <a href="index.php"><img class="logoKey" src="img/logo.png" alt="Logo de NinGym"></a>
+            
             <nav>
                 <ul class="navbar-list">
                     
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="acerca.html">Acerca de</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="view/register.php">Registrarse</a></li>
+                    <li>|</li>
+                    <li><a href="view/login.php">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,6 +24,12 @@
     <main>
         <section>
             <h1>NinGym</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit amet.</p>
