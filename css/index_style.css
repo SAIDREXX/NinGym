@@ -6,10 +6,11 @@
 /* BF0615 191919 74798D F80300 FFF */ 
 
 /* Estilos generales */
-body {
-    font-family: 'Poppins';
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     
 }
 

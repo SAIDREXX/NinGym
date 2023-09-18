@@ -19,15 +19,73 @@
             </div>
     </header>
     <main>
-            <div class="container">
-                <form>
-                    <h3>Registro</h3>
+        <section>
+            <img src="../img/background.png" class="background" alt="Background">
+            <div class="mainContainer">
+
+                <form method="post" action="" id="Form1">
+                    <h3>DATOS PERSONALES</h3>
                     <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido" required>
-                    <input type="text" placeholder="Edad" required>
+                    <input type="text" placeholder="Apellidos" required>
+
+                    <div class="group">
+                        <input type="number" placeholder="Edad" required>
+                        
+                        <select name="gener" id="generOptions">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    </div>
                     
+
+                    <div class="button">
+                        <button type="button">Siguiente</button>
+                    </div>
                 </form>
+
+                <form method="post" action="" id="Form2">
+                    <h3>DATOS DEPORTIVOS</h3>
+                    <input type="number" placeholder="Estatura" required>
+                    <input type="number" placeholder="Peso" required>
+
+                    <div class="groupExperience">
+                        <select name="experience" id="experienceOptions">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Principiante</option>
+                            <option value="2">Intermedio</option>
+                            <option value="3">Avanzado</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="button">
+                        <button type="button">Anterior</button>
+                        <button type="button">Siguiente</button>
+                    </div>
+                </form>
+
+                <form method="post" action="" id="Form3">
+                    <h3>DATOS DE LA CUENTA</h3>
+                    <input type="text" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+    
+                    <div class="button">
+                        <button type="button">Anterior</button>
+                        <button type="button">Enviar</button>
+                    </div>
+                </form>
+
+                <dvi class="step-row">
+                    <div id="progress"></div>
+                    <div class="step-col"><small>Paso 1</small></div>
+                    <div class="step-col"><small>Paso 2</small></div>
+                    <div class="step-col"><small>Paso 3</small></div>
+                </dvi>
+
             </div>
+        </section>    
     </main>
     <footer>
         <p>&copy; 2023 SAIDREXXX</p>
