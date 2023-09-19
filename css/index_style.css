@@ -59,6 +59,7 @@ nav a {
 }
 
 ul li a span {
+    font-family: "Russo One", sans-serif;
     transition: 0.25s;
 }
 

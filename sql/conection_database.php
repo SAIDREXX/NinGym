@@ -1,6 +1,4 @@
 <?php
 
-$conexion = new mysqli("localhost", "root", "", "gimnasio", "3306");
-$conexion->set_charset("utf8");
-
-?>
+$conection = new mysqli("localhost", "root", "", "gimnasio");
+$conection->set_charset("utf8");
