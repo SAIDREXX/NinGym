@@ -23,13 +23,14 @@
     </header>
     <main>
         <section>
-            <img src="../img/background.png" class="background" alt="Background">
+            <?php
+            include("../sql/signup_controller.php");
+            ?>
+
+            <img src="../img/background.webp" class="background" alt="Background">
             <div class="mainContainer">
 
                 <form method="post" action="../sql/signup_controller.php" id="Form1" name="form1">
-                    <?php
-                    include("../sql/signup_controller.php");
-                    ?>
                     <h3>DATOS PERSONALES</h3>
                     <input type="text" placeholder="Nombre" id="name" name="name">
                     <input type="text" placeholder="Apellidos" id="lastName" name="lastName">

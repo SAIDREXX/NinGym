@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="py-6 px-10 flex items-center fixed top-0 w-full justify-between bg-black">
+    <header class="bg-blackpalette text-white py-10 px-0 flex items-center fixed top-0 w-full justify-between">
         <div class="flex flex-grow basis-0">
             <a href="index.php">
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="279.21942mm" height="215.40994mm" viewBox="0 0 989.36019 763.26357" id="svg13739" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="fda-weights.svg" class="h-10 w-32">
@@ -49,10 +49,9 @@
         </nav>
 
     </header>
-
     <main>
         <section>
-            <img src="img/background.png" class="bg-black" alt="Background">
+            <img src="img/background.webp" class="bg-black" alt="Background">
             <div class="slider-container">
                 <div class="slider position">
 
@@ -76,6 +75,7 @@
                         clifford: '#DA373D',
                         graypalette: '#555',
                         redpalette: '#BF0615',
+                        blackpalette: '#121212',
                     }
                 }
             }
