@@ -20,7 +20,7 @@ if (isset($_POST["sendForm"])) {
         empty($name) || empty($lastName) || empty($age) || empty($gener) ||
         empty($weight) || empty($height) || empty($experience) || empty($username) || empty($password)
     ) {
-        echo '<div class="alert alert-danger">RELLENA TODOS LOS CAMPOS</div>';
+        echo '<h5 class="alert-danger">RELLENA TODOS LOS CAMPOS</h5>';
     } else {
         // Utiliza consultas preparadas para evitar la inyección de SQL
         $query = "INSERT INTO usuario(nombre, apellido, edad, genero, peso, estatura, experiencia, usuario, contraseña) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";

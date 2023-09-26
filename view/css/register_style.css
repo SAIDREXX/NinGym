@@ -194,6 +194,19 @@ select option {
     color: #555;
 }
 
+.groupExperience select {
+    font-family: "Kanit";
+    font-size: 1.1em;
+    background: transparent;
+    color: #555;
+    padding: 10px 5px;
+    border: 0;
+    border-bottom: 1px solid #555;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
 
 .button {
     width: 100%;
@@ -261,6 +274,14 @@ form button {
     right: -20px;
     top: 0;
     border-left: 20px solid #BF0615;
+}
+
+.alert-danger {
+    
+    color: #022545;
+    font-family: "Russo One", sans-serif;
+    text-align: center;
+    
 }
 
 
