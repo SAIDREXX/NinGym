@@ -1,6 +1,6 @@
 # Gimnasio GymRats 💪🏋️‍♀️
 
-Bienvenido a Gimnasio FitLife, una aplicación web que te permite registrarte y disfrutar de sus servicios como usuario, administrador o entrenador. Cada uno de estos roles tiene su propia vista y funcionalidades específicas.
+Bienvenido a Gimnasio GymRats, una aplicación web que te permite registrarte y disfrutar de sus servicios como usuario, administrador o entrenador. Cada uno de estos roles tiene su propia vista y funcionalidades específicas.
 
 ## Requisitos Previos
 Antes de comenzar, asegúrate de tener lo siguiente en tu entorno de desarrollo:
