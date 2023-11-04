@@ -1,20 +1,39 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+} else {
+    header('Location: ../login.php');
+    exit;
+}
+
+if (isset($_GET['cerrar_sesion'])) {
+    session_destroy();
+    header('Location: ../../index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>GymRats</title>
+    <title>Registro | GymRats</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="bg-transparent text-white py-10 px-0 flex items-center fixed top-0 w-full justify-between">
         <div class="flex flex-grow basis-0">
-            <a href="index.php">
+            <a href="../index.php">
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="279.21942mm" height="215.40994mm" viewBox="0 0 989.36019 763.26357" id="svg13739" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="fda-weights.svg" class="h-10 w-32">
                     <defs id="defs13741" />
                     <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="1718.849" inkscape:cy="903.54931" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1916" inkscape:window-height="1035" inkscape:window-x="4" inkscape:window-y="1" inkscape:window-maximized="1" />
@@ -36,39 +55,31 @@
 
         <nav>
             <ul class="flex [&>li>a]:inline:block [&>li>a]:px-4 [&>li>a]:py-2 text-4xl text-graypalette">
-                <li><a class="text-redpalette" href="index.php">GymRats</a></li>
+                <li><a class="text-redpalette" href="../index.php">GymRats</a></li>
             </ul>
         </nav>
 
         <nav class="flex flex-grow basis-0 justify-end">
             <ul class="flex [&>li>a]:inline:block [&>li>a]:px-4 [&>li>a]:py-2 text-graypalette">
-                <li><a class="hover:text-redpalette transition duration-250 ease-in-out" href="view/register.php">Registrarse</a></li>
+                <li><a class="hover:text-redpalette transition duration-250 ease-in-out" href="./register.php">Hola, <?php echo $username ?> </a></li>
                 <li class="text-white">|</li>
-                <li><a class="hover:text-redpalette transition duration-250 ease-in-out" href="view/login.php">Iniciar Sesión</a></li>
+                <li><a class="hover:text-redpalette transition duration-250 ease-in-out" href="./admin_page.php?cerrar_sesion=1">Cerrar Sesión</a></li>
             </ul>
         </nav>
 
     </header>
+
     <main>
         <section>
 
-            <div class="slider-container">
-                <div class="slider position">
-
-                </div>
-            </div>
         </section>
     </main>
-
-    <footer class="bg-black">
-        <p class="flex text-redpalette justify-center">&copy; 2023 SAIDREXXX</p>
-    </footer>
-
     <script>
         tailwind.config = {
             theme: {
                 fontFamily: {
-                    sans: ['"Russo One"', 'sans-serif']
+                    sans: ['"Russo One"', 'sans-serif'],
+
                 },
                 extend: {
                     colors: {
@@ -85,9 +96,10 @@
         })
     </script>
 </body>
+
 <style>
     html {
-        background-image: url(./img/background.webp);
+        background-image: url(../../img/background.webp);
         background-size: cover;
         background-color: black;
     }
