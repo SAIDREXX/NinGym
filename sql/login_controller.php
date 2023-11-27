@@ -25,11 +25,11 @@ if (isset($_POST["sendLoginForm"])) {
                         $_SESSION['username'] = $userName;
                         header("Location: ../view/pages/admin_page.php");
                     } elseif ($rol == "Usuario") {
-                        header("Location: ../user.php");
+                        header("Location: ../view/pages/user.php");
                     } elseif ($rol == "Entrenador") {
-                        header("Location: ../trainer.php");
+                        header("Location: ../view/pages/trainer.php");
                     } elseif ($rol == "Cliente") {
-                        header("Location: ../nutritionist.php");
+                        header("Location: ../view/pages/nutritionist.php");
                     } else {
                         echo '<h5 class="alert-danger">USUARIO O CONTRASEÑA INCORRECTOS</h5>';
                     }

@@ -13,6 +13,7 @@ if (isset($_POST["sendForm"])) {
     $experience = trim(filter_input(INPUT_POST, "experience_hidden"));
     $username = trim(filter_input(INPUT_POST, "username"));
     $password = trim($_POST["password"]);
+    $role = "Usuario";
     //$passwordCipher = password_hash($password, PASSWORD_DEFAULT);
 
     // Verifica que todos los campos estén llenos
@@ -23,12 +24,12 @@ if (isset($_POST["sendForm"])) {
         echo '<h5 class="alert-danger">RELLENA TODOS LOS CAMPOS</h5>';
     } else {
         // Utiliza consultas preparadas para evitar la inyección de SQL
-        $query = "INSERT INTO usuario(nombre, apellido, edad, genero, peso, estatura, experiencia, usuario, contraseña) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $query = "INSERT INTO usuario(nombre, apellido, edad, genero, peso, estatura, experiencia, usuario, contraseña, rol) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($conection, $query);
 
         if ($stmt) {
             // Enlaza los parámetros y ejecuta la consulta
-            mysqli_stmt_bind_param($stmt, "ssisiiiss", $name, $lastName, $age, $gener, $weight, $height, $experience, $username, $password);
+            mysqli_stmt_bind_param($stmt, "ssisiiisss", $name, $lastName, $age, $gener, $weight, $height, $experience, $username, $password, $role);
             if (mysqli_stmt_execute($stmt)) {
                 header("Location: ../index.php");
             } else {

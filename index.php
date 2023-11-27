@@ -58,11 +58,12 @@
                 </div>
             </div>
         </section>
+        <footer class="bg-black">
+            <p class="flex text-redpalette justify-center">&copy; 2023 SAIDREXXX</p>
+        </footer>
     </main>
 
-    <footer class="bg-black">
-        <p class="flex text-redpalette justify-center">&copy; 2023 SAIDREXXX</p>
-    </footer>
+
 
     <script>
         tailwind.config = {

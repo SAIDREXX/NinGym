@@ -31,7 +31,7 @@ if (isset($_GET['cerrar_sesion'])) {
 </head>
 
 <body>
-    <header class="bg-transparent text-white py-10 px-0 flex items-center fixed top-0 w-full justify-between">
+    <header class="bg-transparent text-white py-10 px-0 flex items-center top-0 w-full justify-between">
         <div class="flex flex-grow basis-0">
             <a href="../index.php">
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="279.21942mm" height="215.40994mm" viewBox="0 0 989.36019 763.26357" id="svg13739" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="fda-weights.svg" class="h-10 w-32">
@@ -70,9 +70,17 @@ if (isset($_GET['cerrar_sesion'])) {
     </header>
 
     <main>
-        <section>
+        <section">
+            <ul class="flex [&>li>a]:inline:block [&>li>a]:px-4 [&>li>a]:py-2 text-2xl text-graypalette">
+                <li class=" px-20 flex flex-grow basis-o justify-start"><a class="hover:text-redpalette transition duration-250 ease-in-out" href="#">Usuarios</a></li>
+                <li class=" px-20 flex flex-grow basis-o justify-end"><a class="hover:text-redpalette transition duration-250 ease-in-out" href="#">Clientes</a></li>
+            </ul>
+            </section>
 
-        </section>
+
+            <section id="userSection" class="inactive">
+
+            </section>
     </main>
     <script>
         tailwind.config = {
